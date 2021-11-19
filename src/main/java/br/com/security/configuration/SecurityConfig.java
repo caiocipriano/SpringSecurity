@@ -14,6 +14,8 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	
+	//Autenticação em Memória
+	
 	  @Override
 	  protected void configure(HttpSecurity http) throws Exception{
 		  http.csrf().disable().authorizeRequests() //csrf, protocolo de seguraça
